@@ -3,7 +3,6 @@
     --secondary-color: #003249;
     --accent1-color: #90E0EF;
     --accent2-color: #00B4D8;
-    --neutral-color: #f0f8ff;
 }
 
 .container {
@@ -48,7 +47,6 @@ a img {
     flex-wrap: wrap;
     overflow: hidden;
     padding: 20px;
-    background-color: var(--neutral-color);
 }
 
 .hero img {
