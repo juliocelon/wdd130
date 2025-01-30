@@ -91,3 +91,133 @@ a img {
     font-size: 1rem;
     margin: 0;
 }
+
+/*
+4. Use CSS Grid in the header to create 
+the horizontal layout between the logo and 
+the navigation bar.
+
+6. Style the header, img, and nav as needed 
+to create a well designed header that will 
+also be used on the other pages of this 
+rafting site providing a consistent look 
+and feel across the site.
+*/
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    max-width: 700px;
+}
+
+header img {
+    max-width: 200px; 
+    height: auto;
+}
+
+/*
+5. Use CSS Flex to create the horizontal 
+layout in the nav.
+*/
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px; 
+}
+
+nav a {
+    color: navy;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    white-space: nowrap; 
+}
+
+nav a:hover {
+    color: darkred;
+}
+
+/*
+7. Layout the History section elements 
+as shown in the wireframe layout.
+*/
+.history {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.history .content {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
+/* 8. Style the Adventures section with five images to span 
+the section horizontally using a CSS layout method. 
+
+Use figure elements to contain the img elements and use 
+figcaption captions for each figure image, labeling them 
+with the trip adventure name or the water rapid name, 
+e.g., "Los Dientes del Diablo", "Big Mallard", 
+"Half Day Adventure", etc.
+*/
+
+.adventure {
+    text-align: center; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery img {
+    width: 200%; 
+    max-width: 200px; 
+}
+
+.gallery figcaption {
+    font-weight: bold;
+}
+
+/* 9. Style the footer so that the three social images fit 
+in the space and are arranged horizontally and to the right 
+as pictured in the wireframe. */
+
+footer {
+    display: flex;
+    align-items: center; 
+    padding: 15px;
+    background-color: #003249; /* Dark background */
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.social {
+    display: flex;
+    gap: 15px; 
+    justify-content: flex-end; 
+}
