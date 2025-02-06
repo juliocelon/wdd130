@@ -205,7 +205,7 @@ footer {
     display: flex;
     align-items: center; 
     padding: 15px;
-    background-color: #003249; /* Dark background */
+    background-color: #003249; 
     color: white;
 }
 
@@ -220,4 +220,156 @@ footer p {
     display: flex;
     gap: 15px; 
     justify-content: flex-end; 
+}
+
+/* contact */
+
+.hero-contact {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; 
+}
+
+.hero-contact img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+.hero-contact h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.7); 
+    width: 63%;
+}
+
+.hero-contact article {
+    background-color: rgba(0, 50, 73, 0.7);
+    padding: 20px;
+    width: 60%;
+    max-width: 800px;
+}
+
+.hero-contact h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.hero-contact p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: white;
+}
+
+.hero-contact .map {
+    margin-top: 10px;
+    padding: 3px;
+    background: white;
+}
+
+.hero-contact .map iframe {
+    width: 100%;
+    height: 180px;
+}
+
+form {
+    width: 650px; 
+    margin: 0 auto; 
+    padding: 1rem;
+    border: 1px solid rgb (0 0 0 / 0.1); 
+    background-color: var(--primary-color);
+    color:white;
+    display: grid;
+}
+
+fieldset {
+    display: grid; 
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb (0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem; 
+    color: var(--accent2-color);
+    font-size: 1.3em;
+}
+
+label {
+    text-align: right; 
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem; 
+    font-size: 1.1rem;
+}
+
+input [type="checkbox"] {
+    width: 22px; height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff; 
+    border: none; 
+    border-radius: .5rem;
+    padding: .75rem; 
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--accent2-color);
+}
+
+footer {
+    margin: 1rem auto 0; width: 650px;
+    text-align: center; font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+    bottom: 0;
+    margin: 1rem;
+    border-top: 1px solid #000;
+
+
+    width: 100%;
+    color: white;
+}
+
+footer a {
+    color: #777; /* Set link color to match the footer text color */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+footer a:hover {
+    color: var(--accent2-color); /* Set a different color on hover (you can customize this) */
+}
+
+.form-item {
+    display: grid; 
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
 }
