@@ -298,8 +298,8 @@ fieldset {
     display: grid; 
     grid-gap: .5rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
+    row-gap: 1rem; 
 }
 
 legend {
@@ -313,14 +313,9 @@ label {
     padding-right: 1rem;
 }
 
-input, select, textarea {
+input, select, textarea, radio {
     padding: 0.5rem; 
     font-size: 1.1rem;
-}
-
-input [type="checkbox"] {
-    width: 22px; height: 22px;
-    vertical-align: bottom;
 }
 
 button {
@@ -345,8 +340,6 @@ footer {
     bottom: 0;
     margin: 1rem;
     border-top: 1px solid #000;
-
-
     width: 100%;
     color: white;
 }
@@ -360,16 +353,61 @@ footer a:hover {
     color: var(--accent2-color); /* Set a different color on hover (you can customize this) */
 }
 
+.message {
+    grid-template-columns: 1fr; /* Ensure items stack vertically */
+    margin: 0.2rem 0; /* Increase margin for better vertical spacing */
+}
+
+.message label {
+    text-align: left;
+    margin-bottom: 0.1rem; /* Adds space between label and the radio buttons */
+}
+
+.purpose-message label {
+    text-align: left;
+    margin-bottom: 0.1rem; /* Adds space between label and the radio buttons */
+}
+
 .form-item {
-    display: grid; 
-    align-items: center;
+    display: grid;
+    align-items: start;
+    row-gap: 1rem;
 }
 
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
+.newsletter-checkbox {
+    display: flex; 
+    align-items: center; 
+    margin: 0.2rem 0;
 }
 
-.column2 {
-    grid-template-columns: 1fr 2fr;
+.radio-element {
+    display: flex; /* Align radio button and label horizontally */
+    align-items: center; /* Vertically align radio button and label */
+    gap: 0.5rem; /* Adds space between radio button and label */
+}
+
+.purpose-message {
+    display: flex;
+    flex-direction: column; /* Stack the radio elements vertically */
+    gap: 0.1rem; /* Reduce the space between each radio element */
+}
+
+.contact-information .form-item {
+    display: flex;
+    align-items: center;  /* Vertically centers the label and input */
+    justify-content: flex-start;  /* Aligns items to the left */
+    margin-bottom: 1rem;  /* Adds space between form items */
+}
+
+.contact-information .form-item label {
+    margin-right: 0.1rem;  /* Adds space between label and input */
+    width: 100px;
+    text-align: left;
+}
+
+.contact-information .form-item input {
+    font-size: 1rem;  /* Adjust the font size to make the text inside the input larger */
+    padding: 0.5rem;  /* Adds padding inside the input fields */
+    width: 100%;  /* Makes the input field fill its container */
+    max-width: 400px;  /* Limits the width of the input field */
 }

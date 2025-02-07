@@ -75,43 +75,53 @@
                     <fieldset>
                         <legend>Contact Information</legend>
                 
-                        <div class="form-item column2">
-                            <label for="fullname">Full Name:</label> 
-                            <input type="text" id="fullname" name="fullname">
+                        <div class="contact-information">
+                            <div class="form-item">
+                                <label for="fullname">Full Name:</label> 
+                                <input type="text" id="fullname" name="fullname">
+                            </div>
+                    
+                            <div class="form-item">
+                                <label for="useremail">Email:</label>
+                                <input type="email" id="useremail" name="useremail">
+                            </div>
+                            
+                            <div class="form-item">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
                         </div>
-                
-                        <div class="form-item column2">
-                            <label for="useremail">Email:</label>
-                            <input type="email" id="useremail" name="useremail">
-                        </div>
-                        
-                        <div class="form-item column2">
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                
                     </fieldset>
                 
                     <fieldset>
                         <legend>Questions</legend>
-                
-                        <div class="form-item column1">
-                            <label for="purpose">Purpose of the message:</label>
-                            <select id="purpose" name="purpose">
-                                <option value="general">General Inquiry</option> 
-                                <option value="reservation">Reservation Question</option> 
-                                <option value="website">Website Suggestion</option>
-                            </select>
+                        
+                        <div class="form-item purpose-message">
+                            <label>Purpose of the message:</label>
+
+                            <div class="radio-element">
+                                <input type="radio" id="general" name="purpose" value="general">
+                                <label for="general">General Inquiry</label>
+                            </div>
+                            <div class="radio-element">
+                                <input type="radio" id="reservation" name="purpose" value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+                            <div class="radio-element">
+                                <input type="radio" id="website" name="purpose" value="website">
+                                <label for="website">Website Suggestion</label>
+                            </div>
+
                         </div>
                 
-                        <div class="form-item column1">
+                        <div class="form-item message">
                             <label for="feedback">Message:</label>
                             <textarea id="feedback" name="feedback" rows="4" placeholder="Hi! I’m interested in booking a rafting trip..."></textarea>
                         </div>
                 
-                        <div class="form-item column1">
-                            <input type="checkbox" id="newsletter" name="newsletter">
+                        <div class="form-item newsletter-checkbox">    
                             <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                            <input type="checkbox" id="newsletter" name="newsletter">
                         </div>
                 
                     </fieldset>
