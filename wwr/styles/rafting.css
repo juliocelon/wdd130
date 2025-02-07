@@ -313,14 +313,14 @@ label {
     padding-right: 1rem;
 }
 
-input, select, textarea, radio {
+input, textarea, radio {
     padding: 0.5rem; 
     font-size: 1.1rem;
 }
 
 button {
     margin: 1rem;
-    background-color: navy;
+    background-color: var(--secondary-color);
     color: #fff; 
     border: none; 
     border-radius: .5rem;
@@ -345,14 +345,12 @@ footer {
 }
 
 footer a {
-    color: #39A9DB; 
+    color: var(--accent2-color); 
     text-decoration: none; 
-
-    
 }
 
 footer a:hover {
-    color: var(--accent2-color); 
+    color: var(--accent1-color); 
 }
 
 .message {
